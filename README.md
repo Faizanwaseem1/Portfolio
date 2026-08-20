@@ -1,13 +1,14 @@
-# Portfolio Website
+# Muhammad Faizan Portfolio
 
-A simple responsive portfolio website built with HTML, CSS, and JavaScript.
+A futuristic, dark-mode-first portfolio built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
 
 ## Run locally
 
 From the project folder:
 
 ```bash
-python -m http.server 3000
+npm install
+npm run dev
 ```
 
 Then open:
@@ -16,19 +17,24 @@ Then open:
 http://localhost:3000
 ```
 
-## Customize
+## Maintain content
 
-Edit the content in `index.html` and replace placeholder details:
+Update the centralized portfolio content in:
 
-- Your name
-- Location
-- Email
-- LinkedIn URL
-- Project titles and descriptions
-- Skills and experience
+- `content/portfolioData.ts`
 
-## Files
+That file contains the editable content for:
 
-- `index.html` — structure and content
-- `styles.css` — styling and responsive layout
-- `script.js` — mobile menu and reveal animations
+- profile and contact details
+- skills
+- project cards and filters
+- resume metadata and experience
+- telemetry and architecture data
+
+## Key structure
+
+- `app/page.tsx` — main portfolio page
+- `components/command-palette.tsx` — global command palette
+- `components/architecture-visualizer.tsx` — architecture selector UI
+- `content/portfolioData.ts` — all maintainable data
+- `app/globals.css` — Tailwind and cyberpunk visual system
